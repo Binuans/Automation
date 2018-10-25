@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [vanpool suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Vanpool (failed)">
+    <classes>
+      <class name="modules.FareManagement">
+        <methods>
+          <include name="ScheduledCancellationPolicy"/>
+          <include name="homePageSettings"/>
+          <include name="FareManagementScreen"/>
+          <include name="RentalAddnew"/>
+          <include name="RentalCancellationPolicy"/>
+          <include name="ScheduledAddnew"/>
+          <include name="ScheduledDuplicationCheck"/>
+        </methods>
+      </class> <!-- modules.FareManagement -->
+      <class name="modules.HomePage">
+        <methods>
+          <include name="homePageSettings"/>
+          <include name="loginPage"/>
+        </methods>
+      </class> <!-- modules.HomePage -->
+      <class name="modules.MyProfileClass">
+        <methods>
+          <include name="removeImage"/>
+          <include name="homePageSettings"/>
+          <include name="editMyProfile"/>
+          <include name="uploadImage"/>
+          <include name="profileUpdation"/>
+          <include name="changePassword"/>
+        </methods>
+      </class> <!-- modules.MyProfileClass -->
+      <class name="modules.AddNewVehicles">
+        <methods>
+          <include name="addNewVehicles"/>
+          <include name="openVehicles"/>
+          <include name="homePageSettings"/>
+          <include name="closeOperation"/>
+          <include name="addAttachments"/>
+          <include name="addNewMaintenancedetails"/>
+        </methods>
+      </class> <!-- modules.AddNewVehicles -->
+      <class name="modules.ScheduledRide">
+        <methods>
+          <include name="homePageSettings"/>
+          <include name="AddNewScheduledRide"/>
+          <include name="ScheduledRideWindow"/>
+        </methods>
+      </class> <!-- modules.ScheduledRide -->
+      <class name="modules.AddPromotion">
+        <methods>
+          <include name="addNewPromotion"/>
+          <include name="homePageSettings"/>
+          <include name="Promotion"/>
+        </methods>
+      </class> <!-- modules.AddPromotion -->
+      <class name="modules.EnquiryTrackingForm">
+        <methods>
+          <include name="addNewEnquiry"/>
+          <include name="homePageSettings"/>
+          <include name="EnquiryForm"/>
+        </methods>
+      </class> <!-- modules.EnquiryTrackingForm -->
+      <class name="modules.TripManagement">
+        <methods>
+          <include name="addNewTrips"/>
+          <include name="homePageSettings"/>
+          <include name="Trips"/>
+        </methods>
+      </class> <!-- modules.TripManagement -->
+    </classes>
+  </test> <!-- Vanpool (failed) -->
+</suite> <!-- Failed suite [vanpool suite] -->

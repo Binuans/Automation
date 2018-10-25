@@ -1,0 +1,25 @@
+	<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="vanpool suite" parallel="false">
+	 <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+	<test name="Vanpool ">
+
+
+<classes>
+		  
+		  	<class name="modules.HomePage" />
+     <class name="modules.MyProfileClass" />
+		   	 <class name="modules.AddNewVehicles" />
+		  <class name="modules.EnquiryTrackingForm"/>
+	   <class name="modules.AddPromotion"/> 
+	  <class name="modules.ScheduledRide"/>
+		   <class name="modules.FareManagement"/> 
+		    <class name="modules.TripManagement"/> 
+		  
+</classes>
+</test>
+</suite>
